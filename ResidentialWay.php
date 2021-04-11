@@ -11,7 +11,7 @@ final class ResidentialWay extends HighWay
         $this->maxSpeed = 10;
     }
 
-    public function addVehicle($newVehicle)
+    public function addVehicle(Vehicle $newVehicle)
     {
             $this->currentVehicles[] = $newVehicle;
             echo "Vous pouvez rouler ici";
