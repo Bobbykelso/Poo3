@@ -12,11 +12,17 @@ final class PedestrianWay extends HighWay
         $this->maxSpeed = 10;
     }
 
-    public function addVehicle($newVehicle)
+    public function addVehicle(Vehicle $newVehicle)
     {
-        if($newVehicle instanceof Bicycle || $newVehicle instanceof Skateboard){
-            $currentVehicles[] = $newVehicle;
+        if ($newVehicle instanceof Car || $newVehicle instanceof Truck)
+        {
+       echo "Vous n'etes pas autorisés a rouler ici" ;
         }
+     else
+     { 
+        $this->currentVehicules[] = $newVehicle;
+        echo "Vous pouvez rouler ici";
+     }
     }
     
 }

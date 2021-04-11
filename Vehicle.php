@@ -1,7 +1,5 @@
 <?php
 
-// Vehicle.php
-
 class Vehicle
 {
  

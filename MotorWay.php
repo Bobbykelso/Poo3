@@ -15,12 +15,12 @@ final class MotorWay extends HighWay
     {
         if ($newVehicle instanceof Bicycle || $newVehicle instanceof Skateboard)
         {
-       echo "Vous n'etes pas autorisés a rouler ici <br>" ;
+       echo "Vous n'etes pas autorisés a rouler ici" ;
         }
      else
      { 
         $this->currentVehicules[] = $newVehicle;
-        echo "Vous pouvez rouler ici <br>";
+        echo "Vous pouvez rouler ici";
      }
     }
 
